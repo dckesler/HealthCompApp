@@ -1,0 +1,30 @@
+<div style="padding:20px">
+	<h1>{{currentGroup.name}}</h1>
+	<h1>Share ID: {{currentGroup.$id}}</h1><br>
+	<h2><b>Dailies</b></h2>
+	<h2 ng-repeat="activity in currentGroup.dailies">-{{activity.activity}}: <u>{{activity.points}}</u> points<button ng-click="deleteActivity(activity, 'dailies')">Delete</button></h2><br>
+	<h2><b>Weeklies</b></h2>
+	<h2 ng-repeat="activity in currentGroup.weeklies">-{{activity.activity}}: <u>{{activity.points}}</u> points<button ng-click="deleteActivity(activity, 'weeklies')">Delete</button></h2><br>
+	<h2><b>Big Activities</b></h2>
+	<h2 ng-repeat="activity in currentGroup.bigs">-{{activity.activity}}: <u>{{activity.points}}</u> points<button ng-click="deleteActivity(activity, 'bigs')">Delete</button></h2><br>
+
+	<form class="adding" ng-submit="newDailyActivity(newDaily, dailyPoints)">
+		<input type="text" ng-model="newDaily" placeholder="Enter new Daily Activity..." required>
+		<input type="number" ng-model="dailyPoints" placeholder="Enter Daily Point Value..." required>
+		<button type="submit">Create</button>
+	</form>
+
+	<form class="adding" ng-submit="newWeeklyActivity(newWeekly, weeklyPoints)">
+		<input type="text" ng-model="newWeekly" placeholder="Enter new Weekly Activity..." required>
+		<input type="number" ng-model="weeklyPoints" placeholder="Enter Weekly Point Value..." required>
+		<button type="submit">Create</button>
+	</form>
+
+	<form class="adding" ng-submit="newBigActivity(newBig, bigPoints)">
+		<input type="text" ng-model="newBig" placeholder="Enter new Big Activity..." required>
+		<input type="number" ng-model="bigPoints" placeholder="Enter Big Point Value..." required>
+		<button type="submit">Create</button>
+	</form>
+</div>
+
+

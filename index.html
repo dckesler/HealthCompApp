@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="healthApp" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>StupidHealthGame</title>
+	<link rel="stylesheet" href="style/workPageStylesheet.css">
+	<link rel="stylesheet" href="http://necolas.github.io/normalize.css/3.0.1/normalize.css">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+	<div ui-view></div>
+
+
+
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
+	<script src="https://cdn.firebase.com/js/client/1.1.0/firebase.js"></script>
+	<script src="https://cdn.firebase.com/libs/angularfire/0.8.2/angularfire.min.js"></script>
+	<script src="https://cdn.firebase.com/js/simple-login/1.6.3/firebase-simple-login.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.min.js"></script>
+
+	<script src="js/app.js"></script>
+	<script src="js/userService.js"></script>
+	<script src="js/groupService.js"></script>
+
+	<script src="js/mainPage/mainCtrl.js"></script>
+	<script src="js/mainPage/mainService.js"></script>
+		<script src="js/mainPage/signUpPage/signUpCtrl.js"></script>
+		<script src="js/mainPage/signUpPage/signUpService.js"></script>
+
+	<script src="js/settingsPage/settingsCtrl.js"></script>
+	<script src="js/settingsPage/settingsService.js"></script>
+		<script src="js/settingsPage/userSettingsPage/userSettingsCtrl.js"></script>
+		<script src="js/settingsPage/groupSettingsPage/groupSettingsCtrl.js"></script>
+		<script src="js/settingsPage/groupEditingPage/groupEditingCtrl.js"></script>
+
+	<script src="js/workPage/workCtrl.js"></script>
+	<script src="js/workPage/workService.js"></script>
+
+	<script src="js/directives/fullScreenDirective.js"></script>
+</body>
+</html>

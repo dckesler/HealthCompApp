@@ -1,0 +1,384 @@
+a {
+	text-decoration: none;
+	color: black;
+}
+html {
+	height: 100%;
+}
+
+@font-face {
+	font-family: LABTOP;
+	src: url(../LABTOP.ttf);
+}
+body {
+	font-family: LABTOP;
+	height:100%;
+}
+
+.full {
+	width:100%;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+}
+
+.bigHalf {
+	flex-grow: 1;
+	min-width: 49%;
+	position: relative;
+	height:100%;
+}
+
+/*-----------MainPage Info--------------*/
+
+.mainViewInfo {
+	padding:20px;
+	font-size: 2rem;
+	overflow-y: auto;
+	border-left: 1px solid hsl(195, 65%, 70%);
+}
+/*--------------------------------------*/
+
+
+
+/*-------------MainPageView--------------*/
+.mainViewLogin {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+	position:relative;
+}
+/*--------------------------------------*/
+
+
+
+
+/*--------MainPage.LogInView------------*/
+
+.logInButtons {
+	display: inline-block;
+	margin-top: 100px;
+}
+.logInButtons div {
+	background: hsl(195, 65%, 80%);
+	box-shadow: inset 5px 0 30px hsl(195, 65%, 70%);
+	font-size: 4rem;
+	color: #FFF;
+	text-shadow: 1px 1px hsl(195, 75%, 55%);
+	display:inline-block;
+	padding: 10px;
+}
+.logInButtons span div input {
+	color: #333;
+}
+.logInButtons span div button {
+	font-size: 3rem;
+}
+.logInButtons span div {
+	background: hsl(195, 65%, 80%);
+	box-shadow: inset 5px 0 30px hsl(195, 65%, 70%);
+}
+.logInButtons span div:hover{
+	cursor: default;
+	background: hsl(195, 65%, 80%);
+	box-shadow: inset 5px 0 30px hsl(195, 65%, 70%);
+}
+
+.logInButtons div:hover {
+	background: hsl(195, 65%, 70%);
+	box-shadow: inset 5px 0 30px hsl(195, 75%, 60%);
+	cursor: pointer;
+}
+.socialButtons {
+	text-shadow:1px 1px black;
+	opacity: .8;
+	margin: 0 10px;
+}
+
+.socialButtons:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+
+/*-------------------------------------*/
+
+
+
+/*-------------Main Page SignUp View---------------*/
+.signUpBox {
+	padding:20px;
+}
+.signUpBox p {
+	font-size: 2.2rem;
+}
+.signUpBox button {
+	font-size: 1.8rem;
+
+}
+.signUpInput {
+	font-size: 2rem;
+	margin:7px;
+	background: hsl(190, 40%, 99%);
+}
+
+.signUpInput.ng-invalid.ng-dirty {
+	background: hsl(350, 60%, 98%);
+}
+
+.signUpInput.ng-valid {
+	background: hsl(120, 80%, 97%);
+}
+.signIcon {
+	font-size: 
+}
+.backToLogin {
+	background: hsl(195, 65%, 80%);
+	box-shadow: inset 5px 0 30px hsl(195, 65%, 70%);
+	font-size: 4rem;
+	color: #FFF;
+	text-shadow: 1px 1px hsl(195, 75%, 55%);
+	display:inline-block;
+	padding: 10px;
+}
+.backToLogin:hover {
+	background: hsl(195, 65%, 70%);
+	box-shadow: inset 5px 0 30px hsl(195, 75%, 60%);
+	cursor: pointer;
+}
+/*----------------------------------------------------*/
+
+
+/*---------------Settings Page----------------------*/
+
+.settingsMenu {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	/**/
+	justify-content: space-between;
+	width:100%;
+	padding: 0;
+	border-bottom: 1px solid black;
+	padding:8px 0;
+}
+
+.settingsMenu li {
+	list-style-type: none;
+	font-size: 2.5rem;
+	border-right: 1px dotted #444;
+	padding: 0 20px;
+}
+
+.settingsMenu li:first-child {
+	font-weight: bold;
+	color:hsl(195, 65%, 55%);
+	font-size: 2.7rem;
+}
+
+/*--------------------------------------------------*/
+
+/*------------------User Settings Page--------------*/
+.userSettings {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	/**/
+	justify-content: space-around;
+	/**/
+	flex-wrap: wrap;
+}
+
+.aSetting {
+	background: hsl(195, 65%, 70%);
+	padding: 20px;
+	margin-bottom: 20px;
+	border-radius: 4px;
+	box-shadow: 8px 8px 0px hsl(195, 65%, 78%);
+}
+.aSetting p {
+	color: #FFF;
+	text-shadow: 1px 1px #999;
+	font-size: 2.2rem;
+}
+.aSetting:last-child input {
+	width:500px;
+	margin-bottom: 0;
+}
+.aSetting img {
+	width:110px;
+	height:100px;
+}
+.userPropertyText {
+	font-size: 2.5rem;
+	text-decoration: underline;
+	color:#DDFFDD;
+	text-shadow: black;
+}
+.aSetting button {
+	font-size: 2rem;
+}
+/*---------------------------------------*/
+
+/*-------------Group Settings---------------*/
+.startNewGroup {
+	font-size: 2rem;
+	margin:15px;
+	display: inline-block;
+}
+.groupAdminView {
+	display: inline-block;
+	font-size: 2rem;
+	float: right;
+	margin-right: 20px;
+}
+.groupHolder {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	/**/
+	justify-content: space-around;
+	/**/
+	flex-wrap: wrap;
+}
+.groupBox {
+	background: hsl(195, 65%, 70%);
+	padding: 20px;
+	margin-bottom: 20px;
+	border-radius: 4px;
+}
+.aGroup {
+	background: hsl(195, 65%, 70%);
+	padding: 20px;
+	margin-bottom: 20px;
+	border-radius: 4px;
+	box-shadow: 8px 8px 0px hsl(195, 65%, 78%);
+	font-size:3rem;
+	color: #FFF;
+}
+
+.aGroup:hover {
+	box-shadow: -8px -8px 0px hsl(195, 65%, 73%);
+	background: hsl(195, 65%, 65%);
+	cursor: pointer;
+}
+
+.editGroup {
+	background: hsl(195, 65%, 20%);
+	box-shadow: inset -5px -5px 10px hsl(195, 65%, 30%);
+}
+
+/*---------------------------------------*/
+
+.adding {
+	font-size: 2rem;
+}
+.adding input {
+	margin-bottom: 10px;
+	width:350px;
+}
+
+
+/*---------------WorkPage----------------------*/
+
+.personalMenu {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	/**/
+	justify-content: space-around;
+	padding: 10px 0;
+	border-left: 1px dotted #DDD;
+	border-bottom: 1px solid #DDD;
+}
+
+.menuHalf {
+	display: inline-block;
+	text-align: center;
+	font-size: 2.8rem;
+}
+
+.verticalHalf:first-child{
+	border-bottom: 1px solid #AAA;
+
+}
+.littleBox {
+	padding:0 10px;
+	font-size: 2.3rem;
+	border-right: 1px dotted #BBB;
+	border-left: 1px dotted #BBB;
+}
+
+.workPageRight {
+	padding:20px;
+	font-size: 2rem;
+	overflow-y: auto;
+	border-left: 1px solid hsl(195, 65%, 70%);
+	width:50%;
+}
+.workPageLeft {
+	width:50%;
+	font-size:3rem;
+}
+/*-------------------------------------------*/
+
+
+
+
+
+
+
+/*--------------meTodayView----------------------*/
+.goals {
+	padding: 5px;
+}
+.goals li {
+	list-style-type: none;
+	border-bottom: 1px solid hsl(190, 75%, 85%);
+	font-size: 1.6rem;
+	line-height: 2;
+}
+.goals li:first-child{
+	background: hsl(190, 75%, 85%);
+	color: #FFF;
+	padding:5px;
+	font-size: 1.8rem;
+	text-shadow: 1px 1px hsl(190, 75%, 75%);
+}
+.goalBox {
+	width:70%;
+	margin:0 auto;
+}
+.taskValue {
+	float:right;
+	margin-right:10px;
+}
+.doneButton {
+	float:right;
+	background: hsl(170, 65%, 85%);
+	text-shadow: 1px 1px hsl(170, 65%, 65%);
+	padding:0 15px;
+	color: white;
+	box-shadow:inset -5px 0 30px hsl(170, 65%, 70%);
+}

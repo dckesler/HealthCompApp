@@ -1,0 +1,32 @@
+<div class='full'>
+	
+	
+
+	<div class="workPageLeft">
+		<ul>
+			<li ng-repeat="person in currentGroup.members | filter:person.userScore">{{person.userName}} : {{person.userScore}}</li>
+		</ul>
+	</div>
+
+	<div class="workPageRight" full-page>
+		<h2>Group: {{currentGroup.name}}</h1>
+			<ul class="goals">
+				<li>Dailies</li>
+				<li ng-repeat="activity in currentGroup.dailies">{{activity.activity}}: {{activity.points}} points<button ng-click="addPoints(activity.points)">Done</button></li>
+			</ul>
+
+			<ul class="goals">
+				<li>Weeklies</li>
+				<li ng-repeat="activity in currentGroup.weeklies">{{activity.activity}}: {{activity.points}} points<button ng-click="addPoints(activity.points)">Done</button></li>
+			</ul>
+
+			<ul class="goals">
+				<li>Big Ones</li>
+				<li ng-repeat="activity in currentGroup.bigs">{{activity.activity}}: {{activity.points}} points<button ng-click="addPoints(activity.points)">Done</button></li>
+			</ul>		
+	</div>
+
+</div>
+
+<button ng-click="check()">Check</button>
+<button ng-click="otherCheck()">CheckIt</button>

@@ -1,0 +1,17 @@
+<div class="signUpBox">
+	<p>Give us two things and you're good to go.</p>
+	<form ng-submit="newUser(email, password, passwordTwo)">
+		<input type="email" ng-model="email" placeholder="Email" class="signUpInput" required><br>
+		<input type="password" ng-minlength="5" ng-model="password" placeholder="Password" class="signUpInput" required>
+		<input type="password" ng-model="passwordTwo" placeholder="Repeat Password" class="signUpInput" required>
+		<button type="submit">Submit</button>
+	</form>
+	<p><b>OR</b><br>Just log in with Google or Facebook, no sign up necessary.</p>
+	<div class="">
+		<i ng-click="loginWithFacebook()" style="color:hsl(200, 50%, 35%);font-size:3rem" class="fa fa-facebook-square socialButtons"></i>
+		<i ng-click="loginWithGoogle()" style="color:hsl(345, 75%, 55%);font-size:3rem" class="fa fa-google-plus socialButtons"></i>
+	</div>
+	<br>
+	<a href="/"><div class="backToLogin">
+		Back to Login
+	</div></a>

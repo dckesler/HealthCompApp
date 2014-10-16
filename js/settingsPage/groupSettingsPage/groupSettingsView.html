@@ -1,0 +1,32 @@
+<div class="startNewGroup">
+	<form ng-submit="makeNewGroup(newGroupName)">
+		<input ng-model="newGroupName" type="text" required placeholder="Enter a Group Name...">
+		<button type="submit">Make New Group</button>
+	</form>
+</div>
+<div class="startNewGroup">
+	<form ng-submit="joinGroup(groupId)">
+		<input ng-model="groupId" type="text" required placeholder="Enter Group ID...">
+		<button type="submit">Join Group</button>
+	</form>
+</div>
+
+<button ng-show="!adminView" class="groupAdminView" ng-click="buildAdminList()">Go to Admin View</button>
+<button ng-show="adminView" class="groupAdminView" ng-click="allGroups()">View all Groups</button>
+
+<div ng-show="!adminView" class="groupHolder">
+	<div ng-repeat="group in currentUser.groups">
+		<div ng-click="groupView(group.id)" class="aGroup">
+			<p>{{group.name}}</p>
+		</div>
+	</div>
+</div>
+
+<div ng-show="adminView" class="groupHolder">
+	<div ng-repeat="group in adminGroupList">
+		<div ng-click="groupEdit()" class="aGroup">
+			<p>{{group.name}}</p>
+			<button class="editGroup" ng-click="editGroup(group.id)">Edit Group</button>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,30 @@
+<div class="userSettings">
+
+	<!-- Name -->
+	<div class="aSetting">
+			<p>Your current {{currentUser.signInService}} name is: <span class="userPropertyText">{{currentUser.name}}</span></p>
+	</div>
+
+	<!-- Photo -->
+
+	<div ng-show="!customPhoto" class="aSetting">
+		<p>Your current {{currentUser.signInService}} photo is: <img src="{{currentUser.photo}}"></p>
+	</div>
+
+	<!-- Email -->
+	<div class="aSetting">
+		<p> Your current email is: <span class="userPropertyText">{{currentUser.email}}</span></p>
+		<form ng-submit="setNewEmail(newEmail)">
+			<input type="email" ng-model="newEmail" placeholder="Enter your email..." class="signUpInput" required>
+			<button type="submit">Change Email</button>
+		</form>
+	</div>
+	<div class="aSetting">
+		<p> Your current status is: <span class="userPropertyText">{{currentUser.status}}</span></p>
+		<form ng-submit="setNewStatus(newStatus)">
+			<input pattern=".{0,30}" ng-model="newStatus" placeholder="Enter An Image URL... Max of 30 characters..." class="signUpInput" required>
+			<button type="submit">Update Status</button>
+			<p>Characters left: {{30-newStatus.length}}</p>
+		</form>
+	</div>
+</div>

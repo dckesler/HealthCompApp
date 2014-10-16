@@ -1,0 +1,18 @@
+<div class="logInButtons">
+	<span ng-show="loggingIn">
+		<div>
+			<input ng-model="email" class="signUpInput" placeholder="Email">
+			<input ng-model="password" class="signUpInput" placeholder="Password">
+			<button ng-click="loginWithFirebase(email, password)">Log In</button>
+			<br>
+			<i ng-click="loginWithFacebook()" style="color:hsl(200, 50%, 35%)" class="fa fa-facebook-square socialButtons"></i>
+			<i ng-click="loginWithGoogle()" style="color:hsl(345, 75%, 55%)" class="fa fa-google-plus socialButtons"></i>
+		</div>
+		<p style="color:black;font-size:3.5rem">Or</p>
+	</span>
+	<div ng-show="!loggingIn" ng-click="login()">Login</div>
+	<a ui-sref="mainPage.signUpPage"><div>Sign Up</div></a>
+
+	
+
+</div>
